@@ -1,0 +1,225 @@
+/* Principal font import URL */
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+
+/* Secondary font used */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+
+/* General styles in body */
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main container */
+.container{
+    background-color: hsl(30, 38%, 92%);
+    width: 800px;
+    height: 400px;
+    margin: 70px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Info product and image container */
+.card__component{
+    background-color: hsl(0, 0%, 100%);
+    width: 400px;
+    height: 300px;
+    display: flex;
+}
+
+/* Image container */
+.img__container{
+    margin: auto;
+}
+
+/* image styles by itself */
+.img__container img{
+    width: 200px;
+    height: 300px;
+    background-size: cover;
+}
+
+/* Info product container */
+.product__info{
+    padding: 15px 20px 10px 20px;
+}
+
+/* Product Mark - Perfume word styles */
+.product__mark{
+    font-size: .6em;
+    display: block;
+    text-align: start;
+    color: hsl(228, 12%, 48%);
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 5px;
+    margin-bottom: 15px;
+}
+
+/* Product Mark - Product title styles */
+.product__title{
+    font-weight: bold;
+    font-size: 1.2em;
+    justify-content: space-between;
+    font-weight: bolder;
+    margin-top: 5px;
+    font-family: 'Fraunces', serif;
+    margin-bottom: 20px;
+    word-spacing: 7px;
+}
+
+/* Product Mark - Product description styles */
+.product__description{
+    font-size: .6em;
+    color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat', sans-serif;
+    word-spacing: 3px;
+    padding-right: 1px;
+    margin-bottom: 20px;
+}
+
+/* Prices container */
+.prices{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+/* Discount price */
+.discount__price{
+    color: hsl(158, 36%, 37%);
+    font-weight: bold;
+    font-size: 1.2em;
+    font-family: 'Fraunces', serif;
+}
+
+/* Real price without discount */
+.normal__price{
+    color: hsl(228, 12%, 48%);
+    font-size: .6em;
+    font-family: 'Montserrat', sans-serif;
+    padding-right: 32px;
+}
+
+/* Button container */
+.button__container{
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 100%;
+    height: 30px;
+}
+
+/* Button styles */
+.add__button{
+    background-color: hsl(158, 36%, 37%);
+    color: #fff;
+    border-radius: 3px;
+    border: none;
+    font-size: .7em;
+    width: 100%;
+    height: 30px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* SVG styles */
+.add__button img{
+    padding-right: 5px; 
+    height: .8em;
+    width: .8em;
+}
+
+/* Button :hover styles */
+button:hover{
+    background-color: hsl(212, 21%, 14%);
+}
+
+/* Movile design 300px to 600px */
+@media screen and (min-width:300px) and (max-width:600px){
+    body{
+        background-color: hsl(30, 38%, 92%);
+    }
+
+    .container{
+        display: flex;
+        width: 500px;
+        height: 800px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .card__component{
+        display: flex;
+        flex-direction: column;
+        height: 95%;
+        border-radius: 10px;
+    }
+
+    .img__container{
+        margin: 0;
+        width: 100%;
+        height: 380px;
+    }
+
+    .img__container img{
+        width: 100%;
+        height: 380px;
+        background-size: cover;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .product__info{
+        margin: 0;
+        padding: 20px;
+    }
+
+    .product__mark{
+        font-size: .9em;
+        margin-top: 0;
+    }
+
+    .product__title{
+        font-size: 2em;
+        font-weight: bold;
+    }
+
+    .product__description{
+        font-size: 1em;
+    }
+
+    .prices{
+        display: flex;
+    }
+
+    .discount__price{
+        font-size: 2em;
+        font-weight: bolder;
+    }
+
+    .normal__price{
+        font-size: 1em;
+        padding-right: 150px;
+    }
+    
+    .add__button{
+        margin: 0;
+        height: 50px;
+        font-size: 1.1em;
+    }
+
+    /* Footer */
+    .attribution{
+        display: none;
+    }
+}
+
+/* Footer */
+.attribution{
+    text-align: center;
+}
